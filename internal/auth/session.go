@@ -18,6 +18,9 @@ func HashToken(token string) string {
 }
 
 func (s *Session) DisplayName() string {
+	if s == nil {
+		return ""
+	}
 	return s.Name
 }
 
